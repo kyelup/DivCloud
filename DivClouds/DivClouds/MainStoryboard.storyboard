@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="p7b-nN-NXg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="p7b-nN-NXg">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller - MainNav-->
@@ -33,7 +31,7 @@
             <objects>
                 <viewController storyboardIdentifier="MainViewController" title="MainViewcontroller" id="KtY-Uu-HIR" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i3J-LJ-wTI">
-                        <rect key="frame" x="0.0" y="44" width="320" height="436"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="x0Y-Ee-fph">
@@ -179,19 +177,37 @@
                     <connections>
                         <outlet property="loginItemButton" destination="dEi-6f-3Na" id="jVl-HV-mpO"/>
                         <segue destination="CDN-8G-m1g" kind="modal" identifier="MainToLogin" modalTransitionStyle="flipHorizontal" id="1Bg-4B-Mvm"/>
+                        <segue destination="boK-KK-raa" kind="modal" identifier="MainToSetting" id="syn-2p-Ogb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ttT-ha-nto" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-575" y="14"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Qir-hQ-Gyu">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="boK-KK-raa" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b4C-wF-4Hu" customClass="CustomNavigationBar">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <outlet property="navigationController" destination="boK-KK-raa" id="6Mv-cl-ybW"/>
+                        </connections>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AQ8-QY-KVT" kind="relationship" relationship="rootViewController" id="Hk8-hJ-Q0O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zfq-SY-rT5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-40" y="255"/>
+        </scene>
         <!--Profile View Controller - 我的携程-->
         <scene sceneID="DZF-ZL-fth">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QAg-VA-Kvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="AQ8-QY-KVT" customClass="ProfileViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="CsU-hX-o7L">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -463,8 +479,9 @@
                         <barButtonItem key="leftBarButtonItem" title="返回" id="8Uc-kl-y9p"/>
                     </navigationItem>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QAg-VA-Kvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="958" y="-45"/>
+            <point key="canvasLocation" x="414" y="267"/>
         </scene>
         <!--Navigation Controller - LoginMainNavController-->
         <scene sceneID="3br-xg-7xa">
@@ -482,18 +499,18 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fl-nb-D4X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-112" y="-583"/>
+            <point key="canvasLocation" x="-40" y="-369"/>
         </scene>
         <!--Login View Controller - 登陆-->
         <scene sceneID="Rbo-Hw-k1B">
             <objects>
                 <viewController id="CnN-bm-wAI" customClass="LoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EA6-aI-KE8">
-                        <rect key="frame" x="0.0" y="44" width="320" height="436"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="vjX-y6-vUm">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
@@ -646,7 +663,7 @@
             <objects>
                 <viewController id="gOd-Um-x7F" customClass="RegisterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cdb-Ic-WAb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="Nnh-DX-vpX" customClass="CustomNavigationBar">
@@ -668,7 +685,7 @@
                                 </items>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="tvj-UD-SVJ">
-                                <rect key="frame" x="0.0" y="44" width="320" height="436"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="416"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
@@ -799,7 +816,7 @@
             <objects>
                 <viewController id="9Bg-dN-6VU" customClass="ForgetPasswordViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FNS-6A-A2d">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="ad2-hh-NCH" customClass="CustomNavigationBar">
@@ -816,7 +833,7 @@
                                 </items>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="jId-pr-b8o">
-                                <rect key="frame" x="0.0" y="44" width="320" height="436"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="416"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="rounded_table_cell.png" id="91t-Gn-myW">
@@ -931,6 +948,7 @@
         <class className="CustomNavigationBar" superclassName="UINavigationBar">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomNavigationBar.h"/>
             <relationships>
+                <relationship kind="action" name="back:"/>
                 <relationship kind="outlet" name="navigationController" candidateClass="UINavigationController"/>
             </relationships>
         </class>
@@ -991,4 +1009,8 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="sCK-zJ-7dH"/>
+        <segue reference="miP-gb-cyW"/>
+    </inferredMetricsTieBreakers>
 </document>
