@@ -40,6 +40,14 @@
 }
 
 -(IBAction)finishButtonClick:(id)sender{
+    UIBarButtonItem *barButtonItem=sender;
+    
+    if (barButtonItem.tag==0) {
+        NSLog(@"--------0---------");
+    }else {
+         NSLog(@"--------else---------");
+    }
+    
     [self performSegueWithIdentifier:@"settingToMain" sender:self];
 }
 
