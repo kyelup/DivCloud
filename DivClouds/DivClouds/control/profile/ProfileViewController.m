@@ -28,6 +28,7 @@
     UIImage *backImg=[UIImage imageNamed:@"btn_title_small.png"];
     [self.navigationItem.leftBarButtonItem setBackgroundImage:backImg forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     [self.tableView setBackgroundColor:[UIColor whiteColor]];
+
 }
 
 
@@ -49,7 +50,7 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 1;
+    return 6;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -57,7 +58,7 @@
     
     int numberOfRows;
     if(section==0){
-        numberOfRows=3;
+        numberOfRows=2;
     }else if(section==1){
         numberOfRows=1;
     }else if(section==2){
@@ -71,7 +72,6 @@
         numberOfRows=4;
     }
     return numberOfRows;
-    return 10;
     
 }
 
@@ -91,70 +91,79 @@
 //    return cell;
     
     
+    int numberOfRows;
+    if(indexPath.section==0){
+        numberOfRows=0;
+    }else if(indexPath.section==1){
+        numberOfRows=2;
+    }else if(indexPath.section==2){
+        numberOfRows=3;
+    }else if(indexPath.section==3){
+        numberOfRows=5;
+    }else if(indexPath.section==4){
+        numberOfRows=9;
+    }
+    else if(indexPath.section==5){
+        numberOfRows=10;
+    }
+
+    int temp =numberOfRows+indexPath.row;
+    NSLog(@"--------tempID$%i",indexPath.row);
     
+
     
-    static NSString *CellIdentifier = @"tbl1";
-    MyDataCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    NSString *tempStr=[[NSNumber numberWithInt:temp] stringValue];  
+
+     NSString *CellIdentifier = [@"Cell" stringByAppendingString:tempStr];
+    NSLog(@"--------------cellidentifier%@",CellIdentifier);
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
    // UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil)
     {
-        cell = [[MyDataCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] ;
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] ;
 
     }
-    cell.userNameLabel.text=@"testtsdsfds";
-
+    cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
+    
+    
+    if (temp==0) {
+        cell.textLabel.text=@"用户名:";
+    }else if(temp==1){
+         cell.textLabel.text=@"等级:";
+    }else if(temp==2){
+         cell.textLabel.text=@"密码修改";
+    }else if(temp==3){
+         cell.textLabel.text=@"现金账户";
+    }else if(temp==4){
+         cell.textLabel.text=@"游票";
+    }else if(temp==5){
+         cell.textLabel.text=@"机票订单";
+    }else if(temp==6){
+         cell.textLabel.text=@"酒店订单";
+    }else if(temp==7){
+         cell.textLabel.text=@"当地游订单";
+    }else if(temp==8){
+         cell.textLabel.text=@"高铁订单";
+    }else if(temp==9){
+         cell.textLabel.text=@"当地游产品购物车";
+    }else if(temp==10){
+         cell.textLabel.text=@"常住酒店";
+    }else if(temp==11){
+         cell.textLabel.text=@"常用联系人";
+    }else if(temp==12){
+         cell.textLabel.text=@"常用旅客信息";
+    }else if(temp==13){
+         cell.textLabel.text=@"常用地址";
+    }
+  
     //cell.textLabel.text=@"helloworld";
     // Configure the cell...
     
     return cell;
+    
 
-    
-    
-    
-//    
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-//    if (cell == nil)
-//    {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] ;
-//    }
-//    //cell.textLabel.text=@"高级用户";
-    
-    
-    
-//    int isDynamicCell=0;
-//    
-//    if(indexPath.section==0){
-//        isDynamicCell=1;
-//    }
-//    if (isDynamicCell==1) {
-//        MyDataCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell8"];
-//        if (cell == nil)
-//        {
-//            cell = [[MyDataCell alloc] initWithStyle:UITableViewStyleGrouped reuseIdentifier:CellIdentifier] ;
-//            cell.userNameLabelValue.text=@"1121212";
-//        }else {
-//            cell.userNameLabelValue.text=@"1121212";
-//            cell.textLabel.text=@"111111";
-//        }
-//        
-//        
-//        return cell;
-//        
-//        
-//    }else {
-//        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell8"];
-//        if (cell == nil)
-//        {
-//            cell = [[UITableViewCell alloc] initWithStyle:UITableViewStyleGrouped reuseIdentifier:CellIdentifier] ;
-//        }
-//       // cell.textLabel.text=@"高级账户";
-//        
-//        return cell;
-//    }
-//    
-//    return nil;
-    
 }
+
 
 /*
  // Override to support conditional editing of the table view.
