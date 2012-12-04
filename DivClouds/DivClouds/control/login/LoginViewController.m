@@ -132,5 +132,8 @@
     
 }
 
+-(IBAction)dissmissItemButtonClick:(id)sender{
+     [self performSegueWithIdentifier:@"backtoMain" sender:self];
+}
 
 @end

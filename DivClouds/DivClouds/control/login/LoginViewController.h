@@ -20,5 +20,6 @@
 -(IBAction)verifyUserLogin:(id)sender;
 -(void) dissMissForLogin;
 -(IBAction)unRegisterButtonClick:(id)sender;
+-(IBAction)dissmissItemButtonClick:(id)sender;
 
 @end

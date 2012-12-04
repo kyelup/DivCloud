@@ -26,7 +26,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vxt-hW-f95" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-368" y="-114"/>
+            <point key="canvasLocation" x="-1092" y="14"/>
         </scene>
         <!--View Controller - MainViewcontroller-->
         <scene sceneID="I1j-3E-q5h">
@@ -178,33 +178,17 @@
                     </navigationItem>
                     <connections>
                         <outlet property="loginItemButton" destination="dEi-6f-3Na" id="jVl-HV-mpO"/>
+                        <segue destination="CDN-8G-m1g" kind="modal" identifier="MainToLogin" modalTransitionStyle="flipHorizontal" id="1Bg-4B-Mvm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ttT-ha-nto" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="157" y="-128"/>
-        </scene>
-        <!--Navigation Controller - Setting-->
-        <scene sceneID="FlD-3O-Yw0">
-            <objects>
-                <navigationController storyboardIdentifier="Setting" title="Setting" definesPresentationContext="YES" id="EtA-2j-Fli" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="xK2-iW-tef" customClass="CustomNavigationBar">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <connections>
-                            <outlet property="navigationController" destination="EtA-2j-Fli" id="zQp-PP-6uu"/>
-                        </connections>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="yRF-jD-1Sj" kind="relationship" relationship="rootViewController" id="YiW-Dh-Gyp"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pde-cU-ze9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="672" y="518"/>
+            <point key="canvasLocation" x="-575" y="14"/>
         </scene>
         <!--Profile View Controller - 我的携程-->
         <scene sceneID="DZF-ZL-fth">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QAg-VA-Kvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="AQ8-QY-KVT" customClass="ProfileViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="CsU-hX-o7L">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -479,9 +463,8 @@
                         <barButtonItem key="leftBarButtonItem" title="返回" id="8Uc-kl-y9p"/>
                     </navigationItem>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QAg-VA-Kvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1682" y="-173"/>
+            <point key="canvasLocation" x="958" y="-45"/>
         </scene>
         <!--Navigation Controller - LoginMainNavController-->
         <scene sceneID="3br-xg-7xa">
@@ -494,19 +477,19 @@
                         </connections>
                     </navigationBar>
                     <connections>
-                        <segue destination="CnN-bm-wAI" kind="relationship" relationship="rootViewController" id="omD-GH-Dj0"/>
+                        <segue destination="CnN-bm-wAI" kind="relationship" relationship="rootViewController" id="sCK-zJ-7dH"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fl-nb-D4X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="628" y="-887"/>
+            <point key="canvasLocation" x="-112" y="-583"/>
         </scene>
         <!--Login View Controller - 登陆-->
         <scene sceneID="Rbo-Hw-k1B">
             <objects>
                 <viewController id="CnN-bm-wAI" customClass="LoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EA6-aI-KE8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="436"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="vjX-y6-vUm">
@@ -586,7 +569,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gOd-Um-x7F" kind="modal" identifier="presentModelForReg" customClass="PresentModelSegue" id="QF1-5C-1ra"/>
+                                    <segue destination="gOd-Um-x7F" kind="modal" id="wDr-Yf-ag5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fYT-wn-s4J">
@@ -601,7 +584,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9Bg-dN-6VU" kind="modal" identifier="presentModelForPass" customClass="PresentModelSegue" id="r79-OK-Fx8"/>
+                                    <segue destination="9Bg-dN-6VU" kind="modal" id="l45-Rm-THg"/>
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="rLs-YI-z5W">
@@ -639,7 +622,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="登陆" id="Nyq-CA-sxm">
-                        <barButtonItem key="leftBarButtonItem" title="返回" id="qcw-3Y-nFm"/>
+                        <barButtonItem key="leftBarButtonItem" title="返回" id="qcw-3Y-nFm">
+                            <connections>
+                                <action selector="dissmissItemButtonClick:" destination="CnN-bm-wAI" id="3Is-Wc-6g2"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="indicatorView" destination="Z8X-RM-pFZ" id="Cn1-fc-fqq"/>
@@ -647,11 +634,12 @@
                         <outlet property="unRegisterButton" destination="cbj-cm-Hee" id="eM6-af-Rsv"/>
                         <outlet property="unRegisterLabel" destination="ZYw-l6-UnW" id="99j-w8-3pf"/>
                         <outlet property="userNameField" destination="H7M-TB-avg" id="6Wl-En-IUY"/>
+                        <segue destination="p7b-nN-NXg" kind="custom" identifier="backtoMain" customClass="BackToMainSegue" id="IGx-xu-4tL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SMN-2M-4Mu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1322" y="-1514"/>
+            <point key="canvasLocation" x="414" y="-1248"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="7vZ-zL-ZNe">
@@ -668,7 +656,7 @@
                                     <navigationItem title="注册" id="kSp-jN-uDQ">
                                         <barButtonItem key="leftBarButtonItem" title="返回" id="t24-Fd-zDR">
                                             <connections>
-                                                <segue destination="CnN-bm-wAI" kind="custom" customClass="BackToMainSegue" id="fyN-VJ-VmQ"/>
+                                                <segue destination="CnN-bm-wAI" kind="custom" customClass="BackToMainSegue" id="gc6-hc-s30"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="完成" id="pGA-6z-icd">
@@ -799,11 +787,12 @@
                         <outlet property="indicatorView" destination="xtO-Ig-ebJ" id="45f-Gh-rwd"/>
                         <outlet property="passwordField" destination="4r6-yD-OuC" id="LJP-rg-Z7C"/>
                         <outlet property="phoneNumberField" destination="bE0-JN-iCl" id="dhF-EM-FuT"/>
+                        <segue destination="p7b-nN-NXg" kind="custom" identifier="backToMainFromReg" customClass="BackToMainSegue" id="miP-gb-cyW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SF2-kC-MgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2453" y="-1924"/>
+            <point key="canvasLocation" x="909" y="-1656"/>
         </scene>
         <!--Forget Password View Controller-->
         <scene sceneID="NqD-YX-Mjh">
@@ -820,7 +809,7 @@
                                     <navigationItem title="忘记密码" id="2sT-EB-tW2">
                                         <barButtonItem key="leftBarButtonItem" title="返回" id="JWj-o5-3UY">
                                             <connections>
-                                                <segue destination="CnN-bm-wAI" kind="custom" customClass="BackToMainSegue" id="zUj-rX-gXi"/>
+                                                <segue destination="CnN-bm-wAI" kind="custom" customClass="BackToMainSegue" id="9Nz-ig-jyg"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -919,22 +908,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wiF-kt-3sU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2469" y="-1311"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="46P-xE-9zC">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GoC-L5-eHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="yRF-jD-1Sj" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="BkA-Oj-sxW">
-                        <rect key="frame" x="0.0" y="44" width="320" height="436"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="uHW-E2-cEP"/>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="1104" y="518"/>
+            <point key="canvasLocation" x="925" y="-1043"/>
         </scene>
     </scenes>
     <resources>
@@ -977,6 +951,7 @@
         <class className="LoginViewController" superclassName="CustomerViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewController.h"/>
             <relationships>
+                <relationship kind="action" name="dissmissItemButtonClick:"/>
                 <relationship kind="action" name="unRegisterButtonClick:"/>
                 <relationship kind="action" name="verifyUserLogin:"/>
                 <relationship kind="outlet" name="indicatorView" candidateClass="UIActivityIndicatorView"/>
