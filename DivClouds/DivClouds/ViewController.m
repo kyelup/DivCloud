@@ -96,8 +96,20 @@
     
 }
 
--(IBAction)settingButtonClick:(id)sender{
-     [self performSegueWithIdentifier:@"MainToSetting" sender:self];
+-(IBAction)commonButtonClick:(id)sender{
+    
+    UIButton *button=sender;
+    NSString *segueIdentify=nil;
+    
+    if (button.tag==101) {
+        segueIdentify=@"MainToSetting";
+    }else if(button.tag==102){
+        segueIdentify=@"MainToFeedBack";
+    }else if(button.tag==103){
+        segueIdentify=@"MainToMore";
+    }
+    [self performSegueWithIdentifier:segueIdentify sender:self];
+     
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

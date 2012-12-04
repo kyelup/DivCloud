@@ -14,7 +14,7 @@
 
 -(IBAction) loginItemButtonClick:(id)sender;
 -(IBAction)myProfile:(id)sender;
--(IBAction)settingButtonClick:(id)sender;
+-(IBAction)commonButtonClick:(id)sender;
 
 
 

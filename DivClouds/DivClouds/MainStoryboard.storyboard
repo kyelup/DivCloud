@@ -87,7 +87,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="UTF-Tq-anS" kind="modal" identifier="MainToSetting" id="Utn-4D-YfT"/>
+                                    <segue destination="boK-KK-raa" kind="modal" identifier="MainToProfile" id="9Pf-dN-pFt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iXH-d2-hiK">
@@ -114,7 +114,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="boK-KK-raa" kind="modal" identifier="MainToProfile" id="If7-7q-iRb"/>
+                                    <segue destination="Xfb-0T-fDG" kind="modal" identifier="MainToMore" id="pqQ-yG-ns8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8NC-9X-Mkk">
@@ -132,7 +132,7 @@
                                     <action selector="myProfile:" destination="KtY-Uu-HIR" eventType="touchUpInside" id="pCy-aE-n1c"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7aX-u4-ECc">
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7aX-u4-ECc">
                                 <rect key="frame" x="86" y="345" width="82" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -144,10 +144,10 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="settingButtonClick:" destination="KtY-Uu-HIR" eventType="touchUpInside" id="CBj-U3-JBo"/>
+                                    <action selector="commonButtonClick:" destination="KtY-Uu-HIR" eventType="touchUpInside" id="EJc-8d-WdT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4nS-gb-vOE">
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4nS-gb-vOE">
                                 <rect key="frame" x="161" y="345" width="82" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -158,8 +158,12 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="commonButtonClick:" destination="KtY-Uu-HIR" eventType="touchUpInside" id="fh0-ab-OYd"/>
+                                    <segue destination="0Q3-js-knE" kind="modal" identifier="MainToFeedBack" id="gb7-rw-qRf"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AcM-za-Lt4">
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AcM-za-Lt4">
                                 <rect key="frame" x="238" y="345" width="82" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -170,6 +174,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="commonButtonClick:" destination="KtY-Uu-HIR" eventType="touchUpInside" id="Tvx-R3-99x"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -184,6 +191,7 @@
                     <connections>
                         <outlet property="loginItemButton" destination="dEi-6f-3Na" id="jVl-HV-mpO"/>
                         <segue destination="CDN-8G-m1g" kind="modal" identifier="MainToLogin" modalTransitionStyle="flipHorizontal" id="1Bg-4B-Mvm"/>
+                        <segue destination="UTF-Tq-anS" kind="modal" identifier="MainToSetting" id="VI0-Tc-e0Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ttT-ha-nto" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -523,7 +531,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAg-VA-Kvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="474" y="219"/>
+            <point key="canvasLocation" x="438" y="211"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Klp-TU-mGr">
@@ -541,7 +549,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="-34" y="887"/>
+            <point key="canvasLocation" x="-40" y="887"/>
         </scene>
         <!--Setting Main View Controller - 设置-->
         <scene sceneID="ZLq-sp-lo5">
@@ -570,7 +578,96 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="414" y="887"/>
+            <point key="canvasLocation" x="446" y="887"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="czf-0V-Aca">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ly-G3-0nI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="Xfb-0T-fDG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="5XV-6P-VeG" customClass="CustomNavigationBar">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <outlet property="navigationController" destination="Xfb-0T-fDG" id="lSB-dp-zbo"/>
+                        </connections>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Btu-G5-HuM" kind="relationship" relationship="rootViewController" id="Rs6-s4-sZY"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-26" y="2121"/>
+        </scene>
+        <!--More View Controller - 更多-->
+        <scene sceneID="ydG-LY-bBb">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I9K-ct-yeA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Btu-G5-HuM" customClass="MoreViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="efN-CT-Nug">
+                        <rect key="frame" x="0.0" y="44" width="320" height="436"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="更多" id="bhR-zm-fp1">
+                        <barButtonItem key="leftBarButtonItem" title="首页" id="RGl-87-kbb">
+                            <connections>
+                                <action selector="finishButtonClick:" destination="Btu-G5-HuM" id="whf-DZ-Lr3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="p7b-nN-NXg" kind="custom" identifier="settingToMain" customClass="BackToMainSegue" id="YnQ-Lr-Zva"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="446" y="2099"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Dy1-c5-u2p">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f7I-2N-Dj7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="0Q3-js-knE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="9nc-KF-w8e" customClass="CustomNavigationBar">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <outlet property="navigationController" destination="0Q3-js-knE" id="0G2-NB-3Or"/>
+                        </connections>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OpO-sA-lkJ" kind="relationship" relationship="rootViewController" id="Z8o-JL-w3f"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-40" y="1491"/>
+        </scene>
+        <!--Feed Back View Controller - 反馈建议-->
+        <scene sceneID="Qzg-d7-0wi">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="toZ-bh-1bK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="OpO-sA-lkJ" customClass="FeedBackViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0rZ-JY-8zY">
+                        <rect key="frame" x="0.0" y="44" width="320" height="436"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="反馈建议" id="PLc-Jn-ayZ">
+                        <barButtonItem key="leftBarButtonItem" title="首页" id="ZkO-II-2ge">
+                            <connections>
+                                <action selector="finishButtonClick:" destination="OpO-sA-lkJ" id="SIx-Mv-R8B"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" tag="1" title="提交" id="KrN-E3-6UV">
+                            <connections>
+                                <action selector="finishButtonClick:" destination="OpO-sA-lkJ" id="Qtu-xL-vym"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="p7b-nN-NXg" kind="custom" identifier="settingToMain" customClass="BackToMainSegue" id="i3i-CC-b6y"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="446" y="1481"/>
         </scene>
         <!--Navigation Controller - LoginMainNavController-->
         <scene sceneID="3br-xg-7xa">
@@ -1043,6 +1140,12 @@
         <class className="CustomerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomerViewController.h"/>
         </class>
+        <class className="FeedBackViewController" superclassName="CustomerViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FeedBackViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="finishButtonClick:"/>
+            </relationships>
+        </class>
         <class className="ForgetPasswordViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ForgetPasswordViewController.h"/>
             <relationships>
@@ -1065,6 +1168,12 @@
                 <relationship kind="outlet" name="unRegisterButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="unRegisterLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="userNameField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="MoreViewController" superclassName="CustomerViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MoreViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="finishButtonClick:"/>
             </relationships>
         </class>
         <class className="ProfileViewController" superclassName="UITableViewController">
@@ -1091,9 +1200,9 @@
         <class className="ViewController" superclassName="CustomerViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
+                <relationship kind="action" name="commonButtonClick:"/>
                 <relationship kind="action" name="loginItemButtonClick:"/>
                 <relationship kind="action" name="myProfile:"/>
-                <relationship kind="action" name="settingButtonClick:"/>
                 <relationship kind="outlet" name="loginItemButton" candidateClass="UIBarButtonItem"/>
             </relationships>
         </class>
@@ -1105,6 +1214,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="sCK-zJ-7dH"/>
-        <segue reference="Zhq-Lt-VP6"/>
+        <segue reference="i3i-CC-b6y"/>
     </inferredMetricsTieBreakers>
 </document>

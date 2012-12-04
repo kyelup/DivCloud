@@ -88,8 +88,9 @@
 		E5EE17E9166731DA00C02DA9 /* normalBlue542X82Member@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E5EE17E7166731DA00C02DA9 /* normalBlue542X82Member@2x.png */; };
 		E5EE17F11667405300C02DA9 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5EE17F01667405300C02DA9 /* ProfileViewController.m */; };
 		E5EE17F41667411400C02DA9 /* CustomerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5EE17F31667411400C02DA9 /* CustomerTableViewController.m */; };
-		E5EE17FF16675C2200C02DA9 /* MyDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5EE17FE16675C2200C02DA9 /* MyDataCell.m */; };
 		E5F65126166D859E00DE9F30 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5F65125166D859E00DE9F30 /* MainStoryboard.storyboard */; };
+		E5F6518E166DE54800DE9F30 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F6518D166DE54800DE9F30 /* MoreViewController.m */; };
+		E5F65191166DE55A00DE9F30 /* FeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F65190166DE55A00DE9F30 /* FeedBackViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -193,9 +194,11 @@
 		E5EE17F01667405300C02DA9 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = profile/ProfileViewController.m; sourceTree = "<group>"; };
 		E5EE17F21667411400C02DA9 /* CustomerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerTableViewController.h; sourceTree = "<group>"; };
 		E5EE17F31667411400C02DA9 /* CustomerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerTableViewController.m; sourceTree = "<group>"; };
-		E5EE17FD16675C2100C02DA9 /* MyDataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyDataCell.h; path = profile/MyDataCell.h; sourceTree = "<group>"; };
-		E5EE17FE16675C2200C02DA9 /* MyDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyDataCell.m; path = profile/MyDataCell.m; sourceTree = "<group>"; };
 		E5F65125166D859E00DE9F30 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E5F6518C166DE54800DE9F30 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreViewController.h; path = more/MoreViewController.h; sourceTree = "<group>"; };
+		E5F6518D166DE54800DE9F30 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreViewController.m; path = more/MoreViewController.m; sourceTree = "<group>"; };
+		E5F6518F166DE55A00DE9F30 /* FeedBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedBackViewController.h; path = feedback/FeedBackViewController.h; sourceTree = "<group>"; };
+		E5F65190166DE55A00DE9F30 /* FeedBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedBackViewController.m; path = feedback/FeedBackViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +283,8 @@
 		E5B05B7E165CB0EA008233E6 /* control */ = {
 			isa = PBXGroup;
 			children = (
+				E5F6518B166DE52A00DE9F30 /* more */,
+				E5F65189166DE52000DE9F30 /* feedback */,
 				E5EE17EE1667403C00C02DA9 /* profile */,
 				E5EE17E116672E4500C02DA9 /* setting */,
 				E5B05B7F165CB0EA008233E6 /* login */,
@@ -412,10 +417,26 @@
 			children = (
 				E5EE17EF1667405300C02DA9 /* ProfileViewController.h */,
 				E5EE17F01667405300C02DA9 /* ProfileViewController.m */,
-				E5EE17FD16675C2100C02DA9 /* MyDataCell.h */,
-				E5EE17FE16675C2200C02DA9 /* MyDataCell.m */,
 			);
 			name = profile;
+			sourceTree = "<group>";
+		};
+		E5F65189166DE52000DE9F30 /* feedback */ = {
+			isa = PBXGroup;
+			children = (
+				E5F6518F166DE55A00DE9F30 /* FeedBackViewController.h */,
+				E5F65190166DE55A00DE9F30 /* FeedBackViewController.m */,
+			);
+			name = feedback;
+			sourceTree = "<group>";
+		};
+		E5F6518B166DE52A00DE9F30 /* more */ = {
+			isa = PBXGroup;
+			children = (
+				E5F6518C166DE54800DE9F30 /* MoreViewController.h */,
+				E5F6518D166DE54800DE9F30 /* MoreViewController.m */,
+			);
+			name = more;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -556,7 +577,8 @@
 				E5EE17E516672E7300C02DA9 /* SettingMainViewController.m in Sources */,
 				E5EE17F11667405300C02DA9 /* ProfileViewController.m in Sources */,
 				E5EE17F41667411400C02DA9 /* CustomerTableViewController.m in Sources */,
-				E5EE17FF16675C2200C02DA9 /* MyDataCell.m in Sources */,
+				E5F6518E166DE54800DE9F30 /* MoreViewController.m in Sources */,
+				E5F65191166DE55A00DE9F30 /* FeedBackViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

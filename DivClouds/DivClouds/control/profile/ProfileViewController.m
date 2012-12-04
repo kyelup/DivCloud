@@ -8,7 +8,6 @@
 
 #import "ProfileViewController.h"
 #import "CustomNavigationBar.h"
-#import "MyDataCell.h"
 
 @interface ProfileViewController ()
 
