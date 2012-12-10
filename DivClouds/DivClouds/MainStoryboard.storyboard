@@ -86,9 +86,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="boK-KK-raa" kind="modal" identifier="MainToProfile" id="9Pf-dN-pFt"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iXH-d2-hiK">
                                 <rect key="frame" x="20" y="232" width="130" height="101"/>
@@ -113,9 +110,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="Xfb-0T-fDG" kind="modal" identifier="MainToMore" id="pqQ-yG-ns8"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8NC-9X-Mkk">
                                 <rect key="frame" x="12" y="345" width="82" height="71"/>
@@ -192,6 +186,8 @@
                         <outlet property="loginItemButton" destination="dEi-6f-3Na" id="jVl-HV-mpO"/>
                         <segue destination="CDN-8G-m1g" kind="modal" identifier="MainToLogin" modalTransitionStyle="flipHorizontal" id="1Bg-4B-Mvm"/>
                         <segue destination="UTF-Tq-anS" kind="modal" identifier="MainToSetting" id="VI0-Tc-e0Y"/>
+                        <segue destination="Xfb-0T-fDG" kind="modal" identifier="MainToMore" id="6m0-11-1mW"/>
+                        <segue destination="boK-KK-raa" kind="modal" identifier="MainToProfile" id="i4C-X3-SF0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ttT-ha-nto" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -620,7 +616,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="446" y="2099"/>
+            <point key="canvasLocation" x="458" y="2121"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Dy1-c5-u2p">
@@ -1214,6 +1210,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="sCK-zJ-7dH"/>
-        <segue reference="i3i-CC-b6y"/>
+        <segue reference="miP-gb-cyW"/>
     </inferredMetricsTieBreakers>
 </document>
