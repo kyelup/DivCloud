@@ -183,7 +183,6 @@
 		E5A3206E1676DFF700C7E462 /* navigationBarBackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationBarBackButton.png; sourceTree = "<group>"; };
 		E5A3206F1676DFF700C7E462 /* navigationBarBackButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationBarBackButton@2x.png"; sourceTree = "<group>"; };
 		E5A320741676E4B100C7E462 /* aboutus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aboutus.png; sourceTree = "<group>"; };
-		E5A3207A1676E8D400C7E462 /* RecommandAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommandAppViewController.h; sourceTree = "<group>"; };
 		E5B05B5B165CB030008233E6 /* DivClouds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DivClouds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B05B5F165CB030008233E6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E5B05B61165CB030008233E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -329,7 +328,6 @@
 				E5EE17EE1667403C00C02DA9 /* profile */,
 				E5EE17E116672E4500C02DA9 /* setting */,
 				E5B05B7F165CB0EA008233E6 /* login */,
-				E5A3207A1676E8D400C7E462 /* RecommandAppViewController.h */,
 			);
 			path = control;
 			sourceTree = "<group>";
