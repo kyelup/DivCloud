@@ -739,7 +739,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="-58" y="3441"/>
+            <point key="canvasLocation" x="-18" y="2897"/>
         </scene>
         <!--More View Controller-->
         <scene sceneID="Dix-Ph-Zp6">
@@ -865,7 +865,7 @@
                     </connections>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="406" y="3449"/>
+            <point key="canvasLocation" x="446" y="2905"/>
         </scene>
         <!--Common Qu View Controller - 常见问题-->
         <scene sceneID="oTB-Qf-0nB">
@@ -1018,7 +1018,7 @@
                     </navigationItem>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="997" y="3245"/>
+            <point key="canvasLocation" x="1037" y="2701"/>
         </scene>
         <!--Recommand App View Controller - 推荐应用-->
         <scene sceneID="npt-wd-nSP">
@@ -1028,6 +1028,15 @@
                     <view key="view" contentMode="scaleToFill" id="T5D-h8-rk8">
                         <rect key="frame" x="0.0" y="44" width="320" height="436"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="undo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="mAp-qX-mCy">
+                                <rect key="frame" x="124" y="169" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="推荐应用" id="ffk-eg-Cp0">
@@ -1035,7 +1044,7 @@
                     </navigationItem>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="997" y="3805"/>
+            <point key="canvasLocation" x="1037" y="3261"/>
         </scene>
         <!--Ctrip Announce View Controller - 携程公告-->
         <scene sceneID="ajo-sx-Hja">
@@ -1086,7 +1095,7 @@
                     </navigationItem>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1005" y="4373"/>
+            <point key="canvasLocation" x="1045" y="3829"/>
         </scene>
         <!--About Us View Controller -  关于携程无线-->
         <scene sceneID="AYf-l9-Wlt">
@@ -1109,7 +1118,7 @@
                     </navigationItem>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="997" y="2661"/>
+            <point key="canvasLocation" x="1037" y="2117"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Dy1-c5-u2p">
@@ -1137,6 +1146,12 @@
                     <view key="view" contentMode="scaleToFill" id="0rZ-JY-8zY">
                         <rect key="frame" x="0.0" y="44" width="320" height="436"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_common_darkgray.png" id="Qfg-hb-tzd">
+                                <rect key="frame" x="0.0" y="-13" width="320" height="471"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="反馈建议" id="PLc-Jn-ayZ">
@@ -1253,7 +1268,6 @@
                                 <rect key="frame" x="26" y="199" width="122" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="免费注册   >">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1269,7 +1283,6 @@
                                 <rect key="frame" x="180" y="198" width="114" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="忘记密码  >">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1348,7 +1361,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="注册" id="kSp-jN-uDQ">
-                                        <barButtonItem key="leftBarButtonItem" title="返回" id="t24-Fd-zDR">
+                                        <barButtonItem key="leftBarButtonItem" title="登陆" id="t24-Fd-zDR">
                                             <connections>
                                                 <segue destination="CnN-bm-wAI" kind="custom" customClass="BackToMainSegue" id="gc6-hc-s30"/>
                                             </connections>
@@ -1491,6 +1504,7 @@
         <!--Forget Password View Controller-->
         <scene sceneID="NqD-YX-Mjh">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wiF-kt-3sU" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="9Bg-dN-6VU" customClass="ForgetPasswordViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FNS-6A-A2d">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
@@ -1501,7 +1515,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="忘记密码" id="2sT-EB-tW2">
-                                        <barButtonItem key="leftBarButtonItem" title="返回" id="JWj-o5-3UY">
+                                        <barButtonItem key="leftBarButtonItem" title="登陆" id="JWj-o5-3UY">
                                             <connections>
                                                 <segue destination="CnN-bm-wAI" kind="custom" customClass="BackToMainSegue" id="9Nz-ig-jyg"/>
                                             </connections>
@@ -1600,7 +1614,6 @@
                         <outlet property="userNameField" destination="DdG-Qn-WlE" id="0Kk-sK-Zic"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wiF-kt-3sU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="925" y="-1043"/>
         </scene>
@@ -1724,7 +1737,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="sCK-zJ-7dH"/>
         <segue reference="CM5-WA-PDL"/>
     </inferredMetricsTieBreakers>
 </document>
