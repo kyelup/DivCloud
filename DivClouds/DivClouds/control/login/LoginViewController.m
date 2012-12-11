@@ -35,7 +35,7 @@
     // Set the nav bar's background
     [customNavigationBar setBackgroundWith:[UIImage imageNamed:@"bg_blue_linebottom.png"]];
     
-    UIImage *backImg=[UIImage imageNamed:@"btn_title_small.png"];
+    UIImage *backImg=[UIImage imageNamed:@"navigationBarBackButton.png"];
     [self.navigationItem.leftBarButtonItem setBackgroundImage:backImg forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     
     //set the textField Delegate

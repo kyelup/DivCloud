@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "CustomerViewController.h"
 
-@interface MoreViewController : CustomerViewController
+
+@interface MoreViewController : UITableViewController
 -(IBAction)finishButtonClick:(id)sender;
 @end

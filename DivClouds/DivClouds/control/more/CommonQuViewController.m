@@ -1,19 +1,20 @@
 //
-//  ProfileViewController.m
+//  CommonQuViewController.m
 //  DivClouds
 //
-//  Created by LI Haiyun on 11/29/12.
+//  Created by LI Haiyun on 12/11/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "ProfileViewController.h"
+#import "CommonQuViewController.h"
 #import "CustomNavigationBar.h"
 
-@interface ProfileViewController ()
+@interface CommonQuViewController ()
 
 @end
 
-@implementation ProfileViewController
+@implementation CommonQuViewController
+
 
 
 - (void)viewDidLoad
@@ -24,20 +25,33 @@
     // Set the nav bar's background
     [customNavigationBar setBackgroundWith:[UIImage imageNamed:@"bg_blue_linebottom.png"]];
     
-    UIImage *backImg=[UIImage imageNamed:@"navigationBarBackButton.png"];
-    [self.navigationItem.leftBarButtonItem setBackgroundImage:backImg forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    [self.tableView setBackgroundColor:[UIColor whiteColor]];
-
+    
+    UIButton* backButton = [customNavigationBar backButtonWith:[UIImage imageNamed:@"navigationBarBackButton.png"] highlight:nil leftCapWidth:14.0];
+    backButton.titleLabel.textColor = [UIColor colorWithRed:254.0/255.0 green:239.0/255.0 blue:218.0/225.0 alpha:1];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+    
+    [customNavigationBar setText:@"更多" onBackButton:(UIButton*)self.navigationItem.leftBarButtonItem.customView];
+        [self.tableView setBackgroundColor:[UIColor whiteColor]];
 }
-
 
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
+
+-(IBAction)finishButtonClick:(id)sender{
+    
+    
+    
+    [self performSegueWithIdentifier:@"settingToMain" sender:self];
+}
+
+
+
+
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
@@ -49,7 +63,7 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 6;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -57,18 +71,7 @@
     
     int numberOfRows;
     if(section==0){
-        numberOfRows=2;
-    }else if(section==1){
-        numberOfRows=1;
-    }else if(section==2){
-        numberOfRows=2;
-    }else if(section==3){
-        numberOfRows=4;
-    }else if(section==4){
-        numberOfRows=1;
-    }
-    else if(section==5){
-        numberOfRows=4;
+        numberOfRows=7;
     }
     return numberOfRows;
     
@@ -164,19 +167,19 @@
 //}
 
 
--(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
-    {
-        if (indexPath.section==0) {
-            NSLog(@"--------------ttt%i",indexPath.row);
-                  
-            if (indexPath.row==0) {
-                cell.detailTextLabel.text=@"13510516758";
-            }else {
-                cell.detailTextLabel.text=@"黄金会员";
-            }
-        }
-    }
-}
+//-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+//    {
+//        if (indexPath.section==0) {
+//            NSLog(@"--------------ttt%i",indexPath.row);
+//            
+//            if (indexPath.row==0) {
+//                cell.detailTextLabel.text=@"13510516758";
+//            }else {
+//                cell.detailTextLabel.text=@"黄金会员";
+//            }
+//        }
+//    }
+//}
 
 /*
  // Override to support conditional editing of the table view.
@@ -221,15 +224,20 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    
+//    if (indexPath.row==0) {
+//        [self performSegueWithIdentifier:@"aboutctrip" sender:self];
+//    }
+//    if (indexPath.row==1) {
+//        [self performSegueWithIdentifier:@"commonquestion" sender:self];
+//    }
+//    if (indexPath.row==2) {
+//        [self performSegueWithIdentifier:@"recommendapp" sender:self];
+//    }
+//    if (indexPath.row==3) {
+//        [self performSegueWithIdentifier:@"announce" sender:self];
+//    }
 }
-
 
 
 @end
