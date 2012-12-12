@@ -8,6 +8,6 @@
 
 #import "CustomerViewController.h"
 
-@interface RecommandAppViewController : CustomerViewController
+@interface RecommandAppViewController : UITableViewController
 
 @end

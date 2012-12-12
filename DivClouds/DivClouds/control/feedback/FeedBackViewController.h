@@ -8,6 +8,12 @@
 
 #import "CustomerViewController.h"
 
-@interface FeedBackViewController : CustomerViewController
+@interface FeedBackViewController : CustomerViewController<UIScrollViewDelegate>{
+    
+}
+@property(nonatomic,weak) IBOutlet UIScrollView *uiScrollView;
+@property(nonatomic,weak) IBOutlet UITextField *emailAddress;
+@property(nonatomic,weak) IBOutlet UITextField *phoneNumber;
+@property(nonatomic,weak) IBOutlet UITextView *feedbackMessage;
 -(IBAction)finishButtonClick:(id)sender;
 @end

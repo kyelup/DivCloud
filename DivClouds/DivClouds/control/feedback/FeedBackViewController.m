@@ -14,6 +14,10 @@
 @end
 
 @implementation FeedBackViewController
+@synthesize uiScrollView;
+@synthesize emailAddress;
+@synthesize phoneNumber;
+@synthesize feedbackMessage;
 
 
 - (void)viewDidLoad
@@ -29,6 +33,34 @@
     
     UIImage *rightImg=[UIImage imageNamed:@"navigationBarSquareButton.png"];
     [self.navigationItem.rightBarButtonItem setBackgroundImage:rightImg forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
+    self.uiScrollView.pagingEnabled = NO;
+    
+    self.uiScrollView.backgroundColor  = [UIColor clearColor];
+    
+    //[ self.scrollView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"iphone_bg.png"]]];
+    
+    self.uiScrollView.indicatorStyle = UIScrollViewIndicatorStyleDefault;
+    
+    self.uiScrollView.showsHorizontalScrollIndicator = NO;
+    self.uiScrollView.showsVerticalScrollIndicator = YES;
+    
+    self.uiScrollView.canCancelContentTouches = NO;
+    
+    self.uiScrollView.clipsToBounds = YES;
+    
+    self.uiScrollView.delegate = self;
+    
+    self.uiScrollView.contentSize = CGSizeMake(uiScrollView.bounds.size.width-20, uiScrollView.bounds.size.height+50);
+    
+    
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    
+    [emailAddress resignFirstResponder];
+    [phoneNumber resignFirstResponder];
+    [feedbackMessage resignFirstResponder];
     
 }
 

@@ -31,6 +31,7 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
     
     [customNavigationBar setText:@"更多" onBackButton:(UIButton*)self.navigationItem.leftBarButtonItem.customView];
+    [self.tableView setBackgroundColor:[UIColor whiteColor]];
 }
 
 - (void)viewDidUnload
@@ -44,4 +45,22 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    
+    int numberOfRows;
+    if(section==0){
+        numberOfRows=3;
+    }
+    return numberOfRows;
+    
+}
 @end

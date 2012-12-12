@@ -858,10 +858,10 @@
                     </navigationItem>
                     <connections>
                         <segue destination="p7b-nN-NXg" kind="custom" identifier="settingToMain" customClass="BackToMainSegue" id="CM5-WA-PDL"/>
-                        <segue destination="pHk-ta-ha2" kind="push" identifier="recommendapp" id="UdV-ZT-Gkb"/>
                         <segue destination="TCC-n4-EKE" kind="push" identifier="commonquestion" id="vw9-WA-Ltk"/>
                         <segue destination="ijG-dS-9F1" kind="push" identifier="aboutctrip" id="bi3-R9-DM6"/>
                         <segue destination="zsF-Re-wNa" kind="push" identifier="announce" id="mmd-6I-IC2"/>
+                        <segue destination="ZKC-HI-sHm" kind="push" identifier="recommendapp" id="3qz-0R-bSo"/>
                     </connections>
                 </tableViewController>
             </objects>
@@ -1021,30 +1021,95 @@
             <point key="canvasLocation" x="1037" y="2701"/>
         </scene>
         <!--Recommand App View Controller - 推荐应用-->
-        <scene sceneID="npt-wd-nSP">
+        <scene sceneID="7uD-KE-5IC">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DYY-yL-mfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="pHk-ta-ha2" customClass="RecommandAppViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="T5D-h8-rk8">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ptO-oJ-UXq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="ZKC-HI-sHm" customClass="RecommandAppViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="o20-Tm-b2z">
                         <rect key="frame" x="0.0" y="44" width="320" height="436"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="undo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="mAp-qX-mCy">
-                                <rect key="frame" x="124" y="169" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="推荐应用" id="ffk-eg-Cp0">
-                        <barButtonItem key="backBarButtonItem" title="更多" id="4DT-iy-Dd3"/>
-                    </navigationItem>
-                </viewController>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="vEi-Ic-Dta">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Qbl-ra-gkv" imageView="Rhc-Id-ZfG" style="IBUITableViewCellStyleDefault" id="Toz-Rc-PrE">
+                                        <rect key="frame" x="0.0" y="10" width="320" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="订餐小秘书" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qbl-ra-gkv">
+                                                    <rect key="frame" x="53" y="0.0" width="217" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="icon_ordersecretary.png" id="Rhc-Id-ZfG">
+                                                    <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="rhY-35-S76" imageView="KSr-cH-wNl" style="IBUITableViewCellStyleDefault" id="Xuy-v9-muJ">
+                                        <rect key="frame" x="0.0" y="55" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="驴评网" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rhY-35-S76">
+                                                    <rect key="frame" x="53" y="0.0" width="217" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="yellow70X70lvpingwang.png" id="KSr-cH-wNl">
+                                                    <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="w2C-A2-kfu" imageView="xPz-rk-3z7" style="IBUITableViewCellStyleDefault" id="lcH-N0-If8">
+                                        <rect key="frame" x="0.0" y="99" width="320" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="非常准" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="w2C-A2-kfu">
+                                                    <rect key="frame" x="53" y="0.0" width="217" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="fcz.png" id="xPz-rk-3z7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="ZKC-HI-sHm" id="PMd-bq-dw3"/>
+                            <outlet property="delegate" destination="ZKC-HI-sHm" id="oHg-G9-vIX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="推荐应用" id="YS0-8g-Ih6"/>
+                </tableViewController>
             </objects>
-            <point key="canvasLocation" x="1037" y="3261"/>
+            <point key="canvasLocation" x="1044" y="3277"/>
         </scene>
         <!--Ctrip Announce View Controller - 携程公告-->
         <scene sceneID="ajo-sx-Hja">
@@ -1151,6 +1216,86 @@
                                 <rect key="frame" x="0.0" y="-13" width="320" height="471"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="2lg-Uu-nsy">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fWa-nb-ju1">
+                                        <rect key="frame" x="20" y="20" width="280" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="arrow_rounded_cell.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="fOg-lx-A4I">
+                                        <rect key="frame" x="20" y="57" width="280" height="134"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="rounded_table_cell.png" id="QHi-mD-ghC">
+                                        <rect key="frame" x="20" y="192" width="280" height="87"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="rounded_table_cell.png" id="Hrv-NI-Fzp">
+                                        <rect key="frame" x="20" y="278" width="280" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="提示:紧急问题可拨打10106666获得及时帮助" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="6qS-Qk-UE9">
+                                        <rect key="frame" x="29" y="292" width="336" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="如您需要了解反馈结果,请留下邮箱或者手机号码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="7Yh-02-7SX">
+                                        <rect key="frame" x="20" y="192" width="362" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="邮箱:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Msq-gI-eeR">
+                                        <rect key="frame" x="43" y="221" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="电话:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="fm3-yh-N00">
+                                        <rect key="frame" x="43" y="249" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="建议类别:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="hyK-Fc-rp6">
+                                        <rect key="frame" x="29" y="28" width="77" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入邮箱" minimumFontSize="17" id="zRd-gb-lgm">
+                                        <rect key="frame" x="93" y="216" width="191" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入手机号码" minimumFontSize="17" id="mQ2-Oi-pXY">
+                                        <rect key="frame" x="93" y="245" width="191" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1167,6 +1312,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="emailAddress" destination="zRd-gb-lgm" id="wzU-Y0-H5O"/>
+                        <outlet property="feedbackMessage" destination="fOg-lx-A4I" id="i6L-Fz-GFH"/>
+                        <outlet property="phoneNumber" destination="mQ2-Oi-pXY" id="jB2-bi-lA6"/>
+                        <outlet property="uiScrollView" destination="2lg-Uu-nsy" id="6dq-hY-qVK"/>
                         <segue destination="p7b-nN-NXg" kind="custom" identifier="settingToMain" customClass="BackToMainSegue" id="i3i-CC-b6y"/>
                     </connections>
                 </viewController>
@@ -1623,6 +1772,7 @@
         <image name="arrow_rounded_cell.png" width="302" height="46"/>
         <image name="bg_common_darkgray.png" width="330" height="380"/>
         <image name="button_short.png" width="200" height="45"/>
+        <image name="fcz.png" width="70" height="70"/>
         <image name="gray42X42aboutus.png" width="42" height="42"/>
         <image name="gray42X42ctripannounce.png" width="42" height="42"/>
         <image name="gray42X42questions.png" width="42" height="42"/>
@@ -1637,10 +1787,12 @@
         <image name="icon_home_hotelreview.png" width="130" height="101"/>
         <image name="icon_home_localtravel.png" width="130" height="101"/>
         <image name="icon_home_train.png" width="130" height="101"/>
+        <image name="icon_ordersecretary.png" width="70" height="70"/>
         <image name="normalBlue542X82Member.png" width="274" height="44"/>
         <image name="rounded_table_cell.png" width="302" height="46"/>
         <image name="rounded_table_cell_bottom.png" width="302" height="46"/>
         <image name="rounded_table_cell_top.png" width="302" height="46"/>
+        <image name="yellow70X70lvpingwang.png" width="70" height="70"/>
     </resources>
     <classes>
         <class className="AboutUsViewController" superclassName="CustomerViewController">
@@ -1665,6 +1817,10 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FeedBackViewController.h"/>
             <relationships>
                 <relationship kind="action" name="finishButtonClick:"/>
+                <relationship kind="outlet" name="emailAddress" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="feedbackMessage" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="phoneNumber" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="uiScrollView" candidateClass="UIScrollView"/>
             </relationships>
         </class>
         <class className="ForgetPasswordViewController" superclassName="UIViewController">
@@ -1700,7 +1856,7 @@
         <class className="ProfileViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileViewController.h"/>
         </class>
-        <class className="RecommandAppViewController" superclassName="CustomerViewController">
+        <class className="RecommandAppViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RecommandAppViewController.h"/>
         </class>
         <class className="RegisterViewController" superclassName="UIViewController">
@@ -1737,6 +1893,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="CM5-WA-PDL"/>
+        <segue reference="i3i-CC-b6y"/>
+        <segue reference="sCK-zJ-7dH"/>
     </inferredMetricsTieBreakers>
 </document>
